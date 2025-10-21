@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksForGeeks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container-fluid ">
+ 
+<header class="headmain fixed-top">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid px-3">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/gfg-gg-logo.svg" alt="logo" height="30">
+      </a>
+
+      <!-- Search bar (hidden on small screens) -->
+      <form class="d-none d-md-flex ms-3 me-auto" role="search" style="max-width: 300px;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">
+          <i class="fa-solid fa-magnifying-glass fa-xs" style="color: #828282;"></i>
+        </button>
+      </form>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle a11" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">DSA/Placements</a></li>
+              <li><a class="dropdown-item" href="#">Gate 2026</a></li>
+              <li><a class="dropdown-item" href="#">Developments</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle a11" href="#" role="button" data-bs-toggle="dropdown">Tutorials</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">C</a></li>
+              <li><a class="dropdown-item" href="#">C++</a></li>
+              <li><a class="dropdown-item" href="#">Java</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle a11" href="#" role="button" data-bs-toggle="dropdown">Practice</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Problems</a></li>
+              <li><a class="dropdown-item" href="#">Quizzes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle a11" href="#" role="button" data-bs-toggle="dropdown">Jobs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Internships</a></li>
+              <li><a class="dropdown-item" href="#">Placement Portal</a></li>
+            </ul>
+          </li>
+
+          <!-- Mobile Sign In -->
+          <li class="nav-item d-lg-none mt-3">
+            <a class="btn btn-success w-100 fw-semibold" href="#">Sign In</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desktop Sign In -->
+      <button type="button" class="btn btn-success fw-semibold d-none d-lg-block">Sign In</button>
+    </div>
+  </nav>
+
+  <!-- Sub Navbar (scrollable topics) -->
+  <nav class="navbar bg-light border-top border-bottom">
+    <div class="container-fluid justify-content-center">
+      <ul class="list d-flex flex-nowrap overflow-x-auto py-2 px-3 m-0">
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">DSA</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Practice Problems</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">C</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">C++</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Java</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Python</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">JavaScript</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Data Science</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Machine Learning</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Courses</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">Linux</a></li>
+        <li><a href="#" class="text-decoration-none text-dark fw-semibold">DevOps</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="main01">
+<div class="main1">
+<div class="container-fluid text-center py-5  cent" style="background-image: linear-gradient(rgb(215, 234, 225),white); margin-top: 0;">
+        <h1 class="display-5 fw-bold mb-4 mt-5 hello">Hello, What Do You Want To Learn ?</h1>
+       <div class="container-fluid d1">
+    <form class="d-flex search2 col-12 col-md-8 col-lg-6" role="search">
+      <input class="form-control me-1 search3" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #828282;"></i></button>
+    </form>
+        </div>
+  <div class="container btnss flex-wrap">
+  <button type="button" class="btn btn-success btn5">40% off on Courses</button>
+<button type="button" class="btn btn btn4 btn5" >Full Stack live Classes</button>
+<button type="button" class="  btn btn4 btn5">Master DevOps</button>
+</div>
+</div>
+<div class="container my-5 ">
+  <div class="row ps-5 ">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ps-5 ">
+      <h3 class="mb-4 fw-bold ps-5">Courses</h3>
+    </div>
+  </div>
+
+  <div class="row g-5 justify-content-center row4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/GenAI.webp" class="card-img-top img-fluid" alt="GenAI">
+        <div class="card-body">
+          <h5 class="card-title">Generative AI Training Program - Live</h5>
+          <p class="card-text text1"><i class="fa-solid fa-signal"></i> Beginner to Advanced</p>
+          <p class="card-text text2"><i class="fa-solid fa-money-bill-trend-up"></i> 18k+ interested Geeks  <button type="button" class="btn btn-outline-success btn6">Explore now</button></p>
+          <a href="#" class="btn btn-lg fw-bold shadow-sm btn-gfg-outline btn7">Get 40% off</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      
+        <div class="card  h-100">
+  <img src="images/tech_interview.webp" class="card-img-top" alt="GenAI">
+  <div class="card-body">
+    <h5 class="card-title">Tech interview 101 : DSA to System Design for Working.</h5>
+    <p class="card-text text1"><i class="fa-solid fa-signal fa-xs" style="color: #616161;"></i> Beginner to Advanced</p>
+    <p class="card-text text2"> <i class="fa-solid fa-money-bill-trend-up fa-xs" style="color: #4c504e;"></i> 369k+ interested Geeks <button type="button" class="btn btn-outline-success btn6">Explore now</button> </p>
+     <a href="#" class="btn btn-lg fw-bold shadow-sm btn-gfg-outline btn7">Get 40% off</a>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card  h-100">
+  <img src="images/Mernfullstackdevelopment.webp" class="card-img-top" alt="GenAI">
+  <div class="card-body">
+    <h5 class="card-title">MERN Full Stack Development-Live</h5>
+    <p class="card-text text1"><i class="fa-solid fa-signal fa-xs" style="color: #616161;"></i> Beginner to Advanced</p>
+    <p class="card-text text2"> <i class="fa-solid fa-money-bill-trend-up fa-xs" style="color: #4c504e;"></i> 397k+ interested Geeks <button type="button" class="btn btn-outline-success btn6">Explore now</button> </p>
+     <a href="#" class="btn btn-lg fw-bold shadow-sm btn-gfg-outline btn7">Get 40% off</a>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="row g-5 justify-content-center row4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    
+      <div class="card  h-100">
+  <img src="images/devops_engineering.webp" class="card-img-top" alt="GenAI">
+  <div class="card-body">
+    <h5 class="card-title">DevOps Engineering : Planning to Production-Live</h5>
+    <p class="card-text text1"><i class="fa-solid fa-signal fa-xs" style="color: #616161;"></i> Beginner to Advanced</p>
+    <p class="card-text text2"> <i class="fa-solid fa-money-bill-trend-up fa-xs" style="color: #4c504e;"></i> 133k+ interested Geeks <button type="button" class="btn btn-outline-success btn6">Explore now</button> </p>
+    <a href="#" class="btn btn-lg fw-bold shadow-sm btn-gfg-outline btn7">Get 40% off</a>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card  h-100">
+  <img src="images/cpp.webp" class="card-img-top" alt="GenAI">
+  <div class="card-body">
+    <h5 class="card-title">C++ Programming-Self paced</h5>
+    <p class="card-text text1"><i class="fa-solid fa-signal fa-xs" style="color: #616161;"></i> Beginner to Advanced</p>
+    <p class="card-text text2"> <i class="fa-solid fa-money-bill-trend-up fa-xs" style="color: #4c504e;"></i> 298k+ interested Geeks <button type="button" class="btn btn-outline-success btn6">Explore now</button> </p>
+    <a href="#" class="btn btn-lg fw-bold shadow-sm btn-gfg-outline btn7">Get 40% off</a>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card  h-100">
+  <img src="images/JavaProgramming.webp" class="card-img-top" alt="GenAI">
+  <div class="card-body">
+    <h5 class="card-title">Java Programming- Self Paced</h5>
+    <p class="card-text text1"><i class="fa-solid fa-signal fa-xs" style="color: #616161;"></i> Beginner to Advanced</p>
+    <p class="card-text text2"> <i class="fa-solid fa-money-bill-trend-up fa-xs" style="color: #4c504e;"></i> 400k+ interested Geeks <button type="button" class="btn btn-outline-success btn6">Explore now</button> </p>
+     <a href="#" class="btn btn-lg fw-bold shadow-sm btn-gfg-outline btn7">Get 40% off</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class=" container my-5 pt-3   ">
+  <div class="row row5">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"><h3>Must Explore</h3></div>
+  </div>
+  <div class="row justify-content-center row5 pt-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"><div class="card w-75 mb-3 card22">
+  <div class="card-body">
+    <h5 class="card-title">Jobs for you</h5>
+    
+   <a class="icon-link icon-link-hover link1" href="#">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  </svg>
+</a>
+  </div>
+</div>
+</div>
+   <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"><div class="card w-75 mb-3 card22">
+  <div class="card-body">
+    <h5 class="card-title">Hire with us
+    </h5>
+   <a class="icon-link icon-link-hover link1" href="#">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  </svg>
+</a>
+  </div>
+</div>
+</div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"><div class="card w-75 mb-3 card22">
+  <div class="card-body">
+    <h5 class="card-title">Advertise with us</h5>
+    
+   <a class="icon-link icon-link-hover link1" href="#">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  </svg>
+</a>
+  </div>
+</div>
+</div>
+   <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"><div class="card w-75 mb-3 card22 ">
+  <div class="card-body">
+    <h6 class="card-title">Placement Training..</h6>
+    
+   <a class="icon-link icon-link-hover link1" href="#">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  </svg>
+</a>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+<!--next-->
+<div class=" container my-5 pt-3   ">
+  <div class="row row5">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"><h3>Must Explore</h3></div>
+  </div>
+  <div class="row justify-content-center row5 pt-4 ">
+    <div class="col-12  col-lg-6 d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card01 pt-4" >
+    <h3 class="card-title ">Data Structure and Algorithms</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+   <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card02 pt-4" >
+    <h3 class="card-title ">Web Development</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+ <div class="row justify-content-center row5 pt-4">
+
+      <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card03 pt-4" >
+    <h3 class="card-title ">AI ML & Data Science</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+   <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card04 pt-4" >
+    <h3 class="card-title ">Machine Learning</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+  </div>
+   <div class="row justify-content-center row5 pt-4">
+
+      <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card05 pt-4" >
+    <h3 class="card-title ">Python</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+   <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card06 pt-4" >
+    <h3 class="card-title ">Java</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+  </div>
+   <div class="row justify-content-center row5 pt-4">
+
+      <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card07 pt-4" >
+    <h3 class="card-title ">System Design</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+   <div class="col-12 col-lg-6  d-flex justify-content-center"><div class="card w-75 mb-3 ">
+  <div class="card-body text-center card08 pt-4" >
+    <h3 class="card-title ">DevOps</h3>
+    <button type="button" class="btn btn-outline-light btn01 mt-4">View more      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+      <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4
+      4a.5.5 0 0 1 0 .708l-4
+      4a.5.5 0 0 1-.708-.708L13.293
+      8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</button>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+
+</main>
+
+<footer class="bg-light py-5 mt-5">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- Left Section -->
+      <div class="col-md-3 mb-4 text-md-start text-center leftlast">
+        <img src="images/gfgFooterLogo2.png" alt="footerlogo" class="img-fluid mb-3" style="max-width:180px;">
+        <h6>Corporate & Communications Address:</h6>
+        <p class="small mb-2">A-143, 7th Floor, Sovereign Corporate Tower,<br>
+          Sector-136, Noida, Uttar Pradesh (201305)</p>
+        <h6>Registered Address:</h6>
+        <p class="small">K 061, Tower K, Gulshan Vivante Apartment,<br>
+          Sector 137, Noida, Gautam Buddh Nagar,<br> Uttar Pradesh, 201305</p>
+          <p><a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #454545;"></i></a> <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #454545;"></i></a><a href="#"></a> <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #454545;"></i></a>  <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #454545;"></i></a></p>
+          <img src="images/googleplay-(1).png" alt="playstore"><img src="/images/appstore-(1).png" alt="apstore">
+          <a class="btn lastbtn mt-3" href="#" role="button">Advertise with us</a>
+        </div>
+
+      <!-- Right Section -->
+      <div class="col-md-9">
+        <div class="table-responsive">
+          <table class="table table-borderless text-center text-md-start align-middle mb-0">
+            <thead class="fw-bold ">
+              <tr class="thead1">
+                <th style="color: #2f8d46;">Company</th>
+                <th style="color: #2f8d46;">Explore</th>
+                <th style="color: #2f8d46;">Tutorials</th>
+                <th style="color: #2f8d46;">Courses</th>
+                <th style="color: #2f8d46;">Offline Centers</th>
+                <th style="color: #2f8d46;">Preparation Corner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#" class="alink">About Us</a></td>
+                <td><a href="#" class="alink">POTD</a></td>
+                <td><a href="#" class="alink">Programming Language</a></td>
+                <td><a href="#" class="alink">IBM Certification</a></td>
+                <td><a href="#" class="alink">Noida</a></td>
+                <td><a href="#" class="alink">Interview Corner</a></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="alink">Legal</a></td>
+                <td><a href="#" class="alink">Job-A-Thon</a></td>
+                <td><a href="#" class="alink">DSA</a></td>
+                <td><a href="#" class="alink">DSA and Placements</a></td>
+                <td><a href="#" class="alink">Bengaluru</a></td>
+                <td><a href="#" class="alink">Aptitude</a></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="alink">Privacy Policy</a></td>
+                <td><a href="#" class="alink">Connect</a></td>
+                <td><a href="#" class="alink">Web Technology</a></td>
+                <td><a href="#" class="alink">Web Development</a></td>
+                <td><a href="#" class="alink">Pune</a></td>
+                <td><a href="#" class="alink">Puzzles</a></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="alink">Careers</a></td>
+                <td><a href="#" class="alink">Blogs</a></td>
+                <td><a href="#" class="alink">AI, ML & Data Science</a></td>
+                <td><a href="#" class="alink">Data Science</a></td>
+                <td><a href="#" class="alink">Hyderabad</a></td>
+                <td><a href="#" class="alink">GFG 160</a></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="alink">Contact Us</a></td>
+                <td><a href="#" class="alink">Nation Skill Up</a></td>
+                <td><a href="#" class="alink">DevOps</a></td>
+                <td><a href="#" class="alink">Programming Languages</a></td>
+                <td><a href="#" class="alink">Patna</a></td>
+                <td><a href="#" class="alink">System Design</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+         
+    </div>
+
+
+  </div>
+        <hr>
+   <p style="color: #6f6e6e;;">@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved</p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
